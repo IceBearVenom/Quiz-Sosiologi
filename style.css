@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+}
+
+/* background */
+#canvas{
+    height: auto;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+/* App  */
+.app{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: 4px solid #00cc33;
+    width: 90%;
+    max-width: 600px;
+    margin: 130px auto;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.app h1{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.app .question{
+    width: 100%;
+    text-align: justify;
+    margin: 20px 0;
+    color: white;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.app .answer{
+    width: 100%;
+    padding: 0 10px;
+}
+.app .answer .btn{
+    border: 2px solid #00cc33;
+    color: #00200e;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+.app .answer .btn:hover:not([disabled]){
+    background: none;
+    color: #fff;
+}
+.app .answer .btn:disabled{
+    cursor: no-drop;
+}
+.app .next{
+    padding-left: 38%;
+}
+#next{
+    width: 80px;
+    height: 30px;
+    background: #00200e;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    margin: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
+#next:hover{
+    background: none;
+    border: 2px solid #00200e;
+    color: #000000;
+    transition: all .3s;
+}
+.correct{
+    background: rgb(0, 226, 60);
+}
+.incorrect{
+    background: rgb(213, 4, 0);
+}
+.footer{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+    color: #00cc33;
+    margin-top: auto;
+}
+
+/* tablet */
+@media (min-width: 768px){
+    body{
+        height: 1100px;
+    }
+    #next{
+        margin: 0 30px;
+    }
+}
