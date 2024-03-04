@@ -87,7 +87,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = ' You scored ' + score + ' out of ' + questions.length + '!<br>polow ig guweh <a>https://www.instagram.com/tristans_848?igsh=Z3NmYWlucjJ1ZWEz';
+    questionElement.innerHTML = ' You scored ' + score + ' out of ' + questions.length + '!';
     nextButton.innerHTML = 'Play Again';
     nextButton.style.display = 'block'
 }
